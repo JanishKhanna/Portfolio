@@ -1,0 +1,104 @@
+body{
+    margin: auto;
+    max-width: 1000px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: solid 4px rgb(17, 17, 73)
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+
+}
+.box{
+    margin-top: -20px;
+    margin-right: 40px;
+    text-transform: capitalize;
+}
+.name{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+         
+}
+.profession{
+    margin-top: -50px;
+    font-size: x-large;
+    
+}
+.film{
+    width: 100%;
+    margin-top: 30px;
+    height: 550px;
+}
+p{
+    font-size: 40px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.photo{
+    height: 320px;
+    width: 300px;
+}
+#bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 285px;
+    margin-top: -35px;
+    width: 100%;
+}
+@media screen and (max-width:900px) and (min-width:550px){
+    body{
+        margin-left:0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .photo{
+        height: 300px;
+        width: 280px;
+    }
+}    
+@media screen and (max-width:549px){
+    body{
+        margin-left:0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .photo{
+        height: 300px;
+        width: 280px;
+    }
+}
+@media screen and (max-width:470px){
+    body{
+        margin-left:0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .logo{
+        width: 183px;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .profession{
+        font-size: large;
+    }
+    .film{
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width:380px)
