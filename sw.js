@@ -1,4 +1,5 @@
 let staticCache = 'cache-1';
+
 self.addEventListener('install', function(event) {
     console.log('installing and caching');
     event.waitUntil(
@@ -26,7 +27,7 @@ self.addEventListener('fetch', function(event) {
         caches.match(event.request).then(function(response) {
             return response || fetch(event.request);
         })
-    )
+    );
 });
 
 self.addEventListener('activate', function(event) {
@@ -35,11 +36,11 @@ self.addEventListener('activate', function(event) {
         caches.keys().then(function(cacheNames) {
             return Promise.all(
                 cacheNames.filter(function(cacheName) {
-                    return cacheName.startsWith('cache') && cacheName !== staticCache
+                    return cacheName.startsWith('cache') && cacheName !== staticCache;
                 }).map(function(cacheName) {
                     return caches.delete(cacheName);
                 })
             )
         })
-    )
+    );
 });

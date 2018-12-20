@@ -6,4 +6,4 @@ if(navigator.serviceWorker) {
     .catch(function() {
         console.log('Service Worker Did Not Installed');
     })
-}
+};
