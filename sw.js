@@ -5,7 +5,7 @@ self.addEventListener('install', function(event) {
         caches.open(staticCache).then(function(cache) {
             return cache.addAll(
                 [
-                    '/',
+                    './',
                     './index.html',
                     './css/assign3.css',
                     './images/logo.png',
